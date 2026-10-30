@@ -54,6 +54,13 @@ EXEMPT = {
     "latitude": "docs/sky.md: the sky's place, a build setting no theme can move",
     "longitude": "docs/sky.md: the sky's place, a build setting no theme can move",
 }
+# Fork only: the brutalist Home's build settings, documented in BRUTAL_HOME.md, not theme keys.
+FORK_EXEMPT = {
+    "brutal_home": "BRUTAL_HOME.md: the fork's brutalist Home, a build setting",
+    "brutal_city": "BRUTAL_HOME.md: the label over the brutalist Home's weather",
+    "brutal_accent": "BRUTAL_HOME.md: the brutalist Home's accent colour",
+    "brutal_dark": "BRUTAL_HOME.md: the brutalist Home's dark variant",
+}
 
 
 def keys_section(body):
@@ -111,7 +118,7 @@ def missing_rows(table_text, config_text, java_sources):
     """The config.xml keys the launcher reads that no row of the Keys table names, EXEMPT aside."""
     read = read_from_config(config_keys(config_text), java_sources)
     rows = table_keys(table_text)
-    return sorted(name for name in read if name not in rows and name not in EXEMPT)
+    return sorted(name for name in read if name not in rows and name not in EXEMPT and name not in FORK_EXEMPT)
 
 
 def row_for(table_text, key):

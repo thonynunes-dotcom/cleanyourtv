@@ -414,4 +414,16 @@
          faint outer glow), rim (the crisp rim alone, no sheen, fill or glow, for a quiet focus over a wallpaper) or
          halo (the rim with a lighter outer glow). Can also be set with "glass_style": "rim" in a theme's config.json. -->
     <string name="glass_style" translatable="false">glass</string>
+
+    <!-- Brutalist Home (BrutalHome): thick borders, one accent colour, a huge clock, the weather from Open-Meteo
+         beside it and a grid of app names instead of activity_main. This fork's Home; false brings the normal
+         Home back. The weather needs latitude and longitude above (e.g. São Paulo: -23.55 and -46.63) and is
+         read only while Home is on screen, every 30 minutes; this is the one feature that uses INTERNET. -->
+    <bool name="brutal_home">true</bool>
+    <!-- The city name shown over the weather; only a label, the place comes from latitude and longitude. -->
+    <string name="brutal_city" translatable="false"></string>
+    <!-- #RRGGBB of the temperature block and the focused tile. -->
+    <string name="brutal_accent" translatable="false">#FFE600</string>
+    <!-- Light text on near-black instead of black on off-white. -->
+    <bool name="brutal_dark">false</bool>
 </resources>

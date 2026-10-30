@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Words on the brutalist Home (BrutalHome). Portuguese only: this fork's Home is for one TV in Brazil. -->
+<resources>
+    <string name="brutal_morning" translatable="false">BOM DIA</string>
+    <string name="brutal_afternoon" translatable="false">BOA TARDE</string>
+    <string name="brutal_night" translatable="false">BOA NOITE</string>
+    <string name="brutal_inputs" translatable="false">[ ENTRADAS ]</string>
+    <string name="brutal_wifi" translatable="false">[ WI-FI ]</string>
+    <string name="brutal_settings" translatable="false">[ CONFIG ]</string>
+    <string name="brutal_city_unset" translatable="false">SUA CIDADE</string>
+    <string name="brutal_feels" translatable="false">SENSAÇÃO %1$s</string>
+    <string name="brutal_range" translatable="false">MÁX %1$s / MÍN %2$s</string>
+    <string name="brutal_weather_source" translatable="false">CLIMA: OPEN-METEO · ATUALIZADO %1$s</string>
+    <string name="brutal_weather_none" translatable="false">CLIMA: AGUARDANDO OPEN-METEO</string>
+    <string name="brutal_weather_unset" translatable="false">CLIMA: DEFINA LATITUDE E LONGITUDE NO CONFIG.XML</string>
+    <string name="brutal_hint" translatable="false">OK ABRE · SEGURAR OK = INFO DO APP</string>
+</resources>
