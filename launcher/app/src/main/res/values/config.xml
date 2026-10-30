@@ -422,10 +422,10 @@
     <bool name="brutal_home">true</bool>
     <!-- Where the brutalist Home's weather is for, e.g. -23.46 and -46.53. Empty falls back to latitude and
          longitude above, which also move the sky; kept apart so those stay at their upstream default. -->
-    <string name="brutal_latitude" translatable="false"></string>
-    <string name="brutal_longitude" translatable="false"></string>
+    <string name="brutal_latitude" translatable="false">-23.46</string>
+    <string name="brutal_longitude" translatable="false">-46.53</string>
     <!-- The city name shown over the weather; only a label, the place comes from the coordinates. -->
-    <string name="brutal_city" translatable="false"></string>
+    <string name="brutal_city" translatable="false">Guarulhos · SP</string>
     <!-- #RRGGBB of the temperature block and the focused tile. -->
     <string name="brutal_accent" translatable="false">#FFE600</string>
     <!-- Light text on near-black instead of black on off-white. -->

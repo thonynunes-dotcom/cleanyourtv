@@ -14,8 +14,8 @@ never has (AGENTS.md, "No network in the launcher").
 | Key | Default | What it does |
 |---|---|---|
 | `brutal_home` | `true` | The brutalist Home; `false` brings the normal Home back |
-| `brutal_latitude`, `brutal_longitude` | empty | Where the weather is for, as decimal degrees (e.g. `-23.46`, `-46.53`). Set them on your own computer before building, and keep your exact place out of a public fork. Empty: `latitude` and `longitude` instead; all four empty, no weather, and the footer says so |
-| `brutal_city` | empty | The place name shown over the weather (a label only) |
+| `brutal_latitude`, `brutal_longitude` | `-23.46`, `-46.53` (Guarulhos city centre) | Where the weather is for, as decimal degrees (e.g. `-23.46`, `-46.53`). Set them on your own computer before building, and keep your exact place out of a public fork. Empty: `latitude` and `longitude` instead; all four empty, no weather, and the footer says so |
+| `brutal_city` | `Guarulhos · SP` | The place name shown over the weather (a label only) |
 | `brutal_accent` | `#FFE600` | Colour of the temperature block and the focused tile |
 | `brutal_dark` | `false` | Light text on near-black instead of black on off-white |
 
