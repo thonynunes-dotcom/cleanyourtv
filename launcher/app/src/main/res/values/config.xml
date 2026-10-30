@@ -417,10 +417,14 @@
 
     <!-- Brutalist Home (BrutalHome): thick borders, one accent colour, a huge clock, the weather from Open-Meteo
          beside it and a grid of app names instead of activity_main. This fork's Home; false brings the normal
-         Home back. The weather needs latitude and longitude above (e.g. São Paulo: -23.55 and -46.63) and is
+         Home back. The weather needs brutal_latitude and brutal_longitude below and is
          read only while Home is on screen, every 30 minutes; this is the one feature that uses INTERNET. -->
     <bool name="brutal_home">true</bool>
-    <!-- The city name shown over the weather; only a label, the place comes from latitude and longitude. -->
+    <!-- Where the brutalist Home's weather is for, e.g. -23.46 and -46.53. Empty falls back to latitude and
+         longitude above, which also move the sky; kept apart so those stay at their upstream default. -->
+    <string name="brutal_latitude" translatable="false"></string>
+    <string name="brutal_longitude" translatable="false"></string>
+    <!-- The city name shown over the weather; only a label, the place comes from the coordinates. -->
     <string name="brutal_city" translatable="false"></string>
     <!-- #RRGGBB of the temperature block and the focused tile. -->
     <string name="brutal_accent" translatable="false">#FFE600</string>

@@ -14,8 +14,8 @@ never has (AGENTS.md, "No network in the launcher").
 | Key | Default | What it does |
 |---|---|---|
 | `brutal_home` | `true` | The brutalist Home; `false` brings the normal Home back |
-| `latitude`, `longitude` | empty | Where the weather is for, e.g. São Paulo `-23.55` and `-46.63`. Empty: no weather, the footer says so |
-| `brutal_city` | empty | The city name shown over the weather (a label only) |
+| `brutal_latitude`, `brutal_longitude` | empty | Where the weather is for, as decimal degrees (e.g. `-23.46`, `-46.53`). Set them on your own computer before building, and keep your exact place out of a public fork. Empty: `latitude` and `longitude` instead; all four empty, no weather, and the footer says so |
+| `brutal_city` | empty | The place name shown over the weather (a label only) |
 | `brutal_accent` | `#FFE600` | Colour of the temperature block and the focused tile |
 | `brutal_dark` | `false` | Light text on near-black instead of black on off-white |
 
@@ -24,7 +24,8 @@ never has (AGENTS.md, "No network in the launcher").
 ## Weather
 
 From [Open-Meteo](https://open-meteo.com/) (no account, no key): temperature, feels-like, conditions, today's
-high and low, and the next three days. Read only while Home is on screen, every 30 minutes, 5 after a failure;
+high and low, and the next three days. Open-Meteo's model grid is a few kilometres wide, so two decimals of
+latitude and longitude are as precise as it gets. Read only while Home is on screen, every 30 minutes, 5 after a failure;
 the last answer is kept on the TV so Home never starts empty. Sent: the latitude and longitude, nothing else.
 
 ## Remote

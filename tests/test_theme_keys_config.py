@@ -58,6 +58,8 @@ EXEMPT = {
 FORK_EXEMPT = {
     "brutal_home": "BRUTAL_HOME.md: the fork's brutalist Home, a build setting",
     "brutal_city": "BRUTAL_HOME.md: the label over the brutalist Home's weather",
+    "brutal_latitude": "BRUTAL_HOME.md: where the brutalist Home's weather is for",
+    "brutal_longitude": "BRUTAL_HOME.md: where the brutalist Home's weather is for",
     "brutal_accent": "BRUTAL_HOME.md: the brutalist Home's accent colour",
     "brutal_dark": "BRUTAL_HOME.md: the brutalist Home's dark variant",
 }

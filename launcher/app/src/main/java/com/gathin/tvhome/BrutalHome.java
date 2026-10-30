@@ -64,7 +64,7 @@ import java.util.concurrent.Executors;
  * then the inputs, Wi-Fi and Settings buttons and a 4-column grid of app names (no artwork).
  *
  * The weather is read only while Home is on screen, every 30 minutes (5 after a failure), for config.xml's
- * latitude and longitude; the last answer is kept so Home never starts empty.
+ * brutal_latitude and brutal_longitude (else latitude and longitude); the last answer is kept so Home never starts empty.
  */
 final class BrutalHome {
     private static final long WEATHER_EVERY_MS = 30 * 60_000L;
@@ -123,8 +123,11 @@ final class BrutalHome {
         bg = dark ? 0xFF111111 : 0xFFEDEBE4;
         accent = parseColor(activity.getString(R.string.brutal_accent), 0xFFFFE600);
         city = activity.getString(R.string.brutal_city).trim();
-        lat = activity.getString(R.string.latitude).trim();
-        lon = activity.getString(R.string.longitude).trim();
+        String bLat = activity.getString(R.string.brutal_latitude).trim();
+        String bLon = activity.getString(R.string.brutal_longitude).trim();
+        boolean own = !bLat.isEmpty() && !bLon.isEmpty();
+        lat = own ? bLat : activity.getString(R.string.latitude).trim();
+        lon = own ? bLon : activity.getString(R.string.longitude).trim();
         Config cfg = Config.load(activity);
         dockApps = cfg.dockApps;
         hiddenApps = new HashSet<>(cfg.hiddenApps);
